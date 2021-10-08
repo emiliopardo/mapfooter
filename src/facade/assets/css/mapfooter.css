@@ -1,0 +1,86 @@
+.mapfooter-cerrar:before {
+  content: "Ocultar \e905";
+}
+
+.mapfooter-abrir:before {
+  content: "Mostrar \e935";
+}
+/** Estilos sobreescritos */
+.g-cartografia-flecha-abajo {
+  color: #536dfe !important;
+}
+.g-cartografia-flecha-arriba {
+  color: #536dfe !important;
+}
+.g-cartografia-flecha-izquierda {
+  color: #536dfe !important;
+}
+.m-areas > div.m-area.m-left > div.m-panel.m-mapfooter {
+  position:relative;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  margin-left: 0px !important;
+  margin-bottom: 0px !important;
+  border-radius: 0px !important;
+}
+
+#div-contenedor-mapfooter{
+  width: 100vw !important;
+}
+
+.m-areas
+  > div.m-area.m-left.m-bottom
+  > div.m-panel.m-mapfooter.opened
+  > div.m-panel-controls {
+  width: 100% !important;
+  padding-top: 5px !important;
+  border-radius: 0px !important;
+  background-color: #FFF;
+}
+
+.m-areas
+  > div.m-area.m-left.m-bottom
+  > div.m-panel.m-mapfooter.collapsed
+  > div.m-panel-controls {
+  display:none !important;
+}
+
+div.m-panel.m-scaleline.opened {
+  position: absolute;
+  top: 20px;
+  left: 100px !important;
+}
+.m-areas > div.m-area > div.m-panel > div.m-panel-controls {
+  transition: none !important;
+}
+
+.m-areas
+  > div.m-area.m-left.m-bottom
+  > div.m-panel.m-mapfooter
+  > button {
+  font-weight: bold;
+  color: #666 !important;
+  background-color: #e3e3e3 !important;
+  font-size: 12px !important;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  width: 90px;
+  height: 25px !important;
+  float: left !important;
+}
+
+.m-areas
+  > div.m-area.m-left.m-bottom
+  > div.m-panel.m-mapfooter.opened
+  > button.m-panel-btn.g-cartografia-flecha-izquierda::before {
+  content: "Ocultar \e905";
+}
+
+#div-contenedor-Mapfooter {
+  width: 100% !important;
+  height: auto;
+  padding-top: 10px !important;
+  background-color: #ffffff !important;
+}

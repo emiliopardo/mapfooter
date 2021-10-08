@@ -1,0 +1,38 @@
+{
+  "url": {
+    "name": "Mapfooter",
+    "separator": "*"
+  },
+  "constructor": "M.plugin.Mapfooter",
+  "parameters": [],
+  "files": {
+    "ol": {
+      "scripts": ["mapfooter.ol.min.js"],
+      "styles": ["mapfooter.ol.min.css"]
+    }
+  },
+  "metadata": {
+    "uuid_plugin": "",
+    "uuid_version_plugin": "",
+    "version_ficha_metadatos": "",
+    "name": "Mapfooter",
+    "description": "Generador de Pie de Mapa",
+    "text": "Se crea un pie de página para el mapa",
+    "version": "1.0.0",
+    "date": "Octubre, 2021",
+    "author": "Enrique Monreal, Emilio Pardo",
+    "org": "",
+    "tags": "mapea,plugin",
+    "icon": "./facade/assets/icons/icons.svg",
+    "buttons": [
+      { "title": "", "description": "", "querySelector": "" },
+      { "title": "", "description": "", "querySelector": "" }
+    ],
+    "dependencies": {
+      "modules": ["", ""],
+      "plugins": [{ "uuid": "", "name": "" }],
+      "services": [{ "name": "", "description": "" }]
+    },
+    "compatibility": ["6.0.0"]
+  }
+}
