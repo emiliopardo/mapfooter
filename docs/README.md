@@ -49,8 +49,8 @@ const mp = new Mapfooter(configIECA);
 map.addPlugin(mp);
 ```
 ## Visor Demo
-Para comprobar el funcionamiento de este plugin se puede acceder al siguiente enlace [Ejemplo Visor](https://EnriqueMonreal.github.io/mapfooter/).
+Para comprobar el funcionamiento de este plugin se puede acceder al siguiente enlace [Ejemplo Visor](https://emiliopardo.github.io/mapfooter/).
 
 ## Video Demo
 
-Para comprobar el funcionamiento de este plugin se puede descargar el [Video](https://github.com/EnriqueMonreal/mapfooter/blob/master/docs/video/mapFooter.webm?raw=true) el cual contempla la configuración y carga del plugin con diferentes pies de páginas
+Para comprobar el funcionamiento de este plugin se puede descargar el [Video](https://github.com/emiliopardo/mapfooter/blob/master/docs/video/mapFooter.webm?raw=true) el cual contempla la configuración y carga del plugin con diferentes pies de páginas
