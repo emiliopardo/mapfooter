@@ -66,6 +66,10 @@ export default class Mapfooter extends M.Plugin {
     if(this.open){
      this.panel_.open();
     }
+
+    this.control_.on(M.evt.ADDED_TO_MAP, () => {
+      this.fire(M.evt.ADDED_TO_MAP);
+    });
   }
 
   /**
