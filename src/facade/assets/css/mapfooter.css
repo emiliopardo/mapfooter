@@ -59,7 +59,6 @@ div.m-panel.m-scaleline.opened {
   > div.m-area.m-left.m-bottom
   > div.m-panel.m-mapfooter
   > button {
-  font-weight: bold;
   color: #666 !important;
   background-color: #e3e3e3 !important;
   font-size: 12px !important;
@@ -71,12 +70,11 @@ div.m-panel.m-scaleline.opened {
   border-bottom-left-radius: 0px !important;
   border-bottom-right-radius: 0px !important;
   background-image: linear-gradient(#bebebe,#ffffff,#ffffff);
-  border-top:solid 2px !important;
-  border-right:solid 2px !important;
+  border-top:solid #86A10B 2px !important;
+  border-right:solid #86A10B 2px !important;
   border-bottom: none !important; 
   color: #666 !important;  
   box-shadow: 1px -2px 4px rgb(0 0 0 / 20%) !important;
-  border-color:#86A10B !important;
 }
 
 .m-areas
