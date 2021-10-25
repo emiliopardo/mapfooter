@@ -43,6 +43,7 @@
   border-radius: 0px !important;
   width: 100vw;
   border: none !important;
+  bottom: 25px !important;
 }
 .m-areas
   > div.m-area.m-bottom.m-left
