@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /**
  * @module M/control/MapfooterControl
  */
@@ -122,7 +123,7 @@ export default class MapfooterControl extends M.Control {
     return control instanceof MapfooterControl;
   }
 
-  //Add your own functions
+  // Add your own functions
   injectCSS(cssList) {
     for (let index = 0; index < cssList.length; index++) {
       const cssFile = cssList[index];
@@ -141,18 +142,40 @@ export default class MapfooterControl extends M.Control {
   }
 
   checkFooterheight() {
-    let bottomElements = document.querySelectorAll('div.m-bottom')
-      this.panelHeight = this.html_.offsetHeight;
-      for (let index = 0; index < bottomElements.length; index++) {
-        const element = bottomElements[index];
-        if (element.classList.contains('m-right')) {
-          element.style.marginBottom = this.panelHeight + 10 + "px";
-        } 
+    let bottomElements = document.querySelectorAll('div.m-bottom');
+    if (document.querySelectorAll('div.m-panel.m-mapfooter').length > 0) {
+      this.panelHeight = document.querySelectorAll('div.m-panel.m-mapfooter')[0].clientHeight;
+
+    }
+    let button = document.querySelectorAll('div.m-panel.m-mapfooter>button')[0];
+    if (button) {
+      button.style.setProperty('bottom', this.panelHeight + 'px', 'important');
+    }
+    for (let index = 0; index < bottomElements.length; index++) {
+      const element = bottomElements[index];
+      if (element.classList.contains('m-right')) {
+        element.style.marginBottom = this.panelHeight + 10 + "px";
       }
+    }
+    bottomElements = document.querySelectorAll('div.m-bottom.m-left')[0].childNodes;
+
+    for (let index = 0; index < bottomElements.length; index++) {
+      const element = bottomElements[index];
+      if (!element.classList.contains('m-mapfooter')) {
+        if (element.classList.contains('m-scaleline')) {
+          element.style.setProperty('margin-left', '100px', 'important');
+          element.style.setProperty('margin-bottom', this.panelHeight + 10 + 'px', 'important');
+        } else {
+
+          element.style.setProperty('margin-bottom', this.panelHeight + 30 + 'px', 'important');
+        }
+      }
+    }
   }
 
   setBottomMargin(opened) {
-    let bottomElements = document.querySelectorAll('div.m-bottom')
+    let bottomElements = document.querySelectorAll('div.m-bottom');
+
     for (let index = 0; index < bottomElements.length; index++) {
       const element = bottomElements[index];
       if (element.classList.contains('m-right')) {
